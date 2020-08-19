@@ -1,2 +1,3 @@
 DEBUG=False
 SECRET_KEY=mude a senha
+ALLOWED_HOSTS=localhost, 127.0.0.1
