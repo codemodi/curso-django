@@ -58,8 +58,10 @@ coverage.xml
 # Django stuff:
 *.log
 local_settings.py
+sqlite3
+sqlite3-journal
+db.sqlite
 db.sqlite3
-db.sqlite3-journal
 
 # Flask stuff:
 instance/
@@ -129,3 +131,20 @@ dmypy.json
 .pyre/
 
 .idea/
+
+#dynaconf settings
+/settings.yml
+/frontend/css/
+/frontend/node_modules/
+
+# no including dumps
+*.dump
+
+pythonpro-website/.pytest_cache/
+mediafiles/
+staticfiles/
+
+.pytest_cache/
+
+# local posgres files
+.pgdata
