@@ -21,7 +21,7 @@ from pypro.base.views import home, trigger_error
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', include('pypro.base.urls')),
     path('sentry-debug/', trigger_error),
 ]
 
