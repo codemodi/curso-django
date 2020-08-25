@@ -6,5 +6,5 @@ def home(request):
     return render(request, 'base/home.html')
 
 
-def trigger_error(request):
+def wrigger_error(request):
     1 / 0
