@@ -14,8 +14,8 @@ def test_status_code(resp):
 
 
 def test_titulo_video(resp):
-    assert_contains(resp, 'All Going To Die')
+    assert_contains(resp, 'We are All Going To Die')
 
 
 def test_conteudo_video(resp):
-    assert_contains(resp, '<iframe src="https://player.vimeo.com/video/292711054')
+    assert_contains(resp, 'src="https://player.vimeo.com/video/292711054"')
