@@ -148,3 +148,5 @@ staticfiles/
 
 # local posgres files
 .pgdata
+
+static/
