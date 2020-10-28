@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'pypro.base',
     'pypro.aperitivos',
+    'pypro.modulos',
+    'ordered_model',
+    'django_extensions',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'pypro.modulos.context_processors.listar_modulos',
             ],
         },
     },
@@ -80,6 +84,7 @@ WSGI_APPLICATION = 'pypro.wsgi.application'
 # Config django debug toolbar
 
 INTERNAL_IPS = config('INTERNAL_IPS', cast=Csv(), default='127.0.0.1')
+# INTERNAL_IPS = ['127.0.0.1']
 
 if DEBUG:
     INSTALLED_APPS.append('debug_toolbar')
