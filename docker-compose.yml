@@ -1,0 +1,29 @@
+version: "3.3"
+
+services:
+  database:
+    container_name: cursodjango_database
+    image: postgres
+    restart: always
+    volumes:
+      - ./pgdata:/var/lib/postgresql/data
+    environment:
+      - LC_ALL=C.UTF-8
+      - POSTGRES_PASSWORD=pythonpro
+      - POSTGRES_USER=pythonpro
+      - POSTGRES_DB=cursodjango
+    ports:
+      - 5432:5432
+
+  pgadmin:
+      image: dpage/pgadmin4
+      container_name: ccpb-pgadmin
+      tty: true
+      environment:
+        - PGADMIN_DEFAULT_EMAIL=admin
+        - PGADMIN_DEFAULT_PASSWORD=123456
+      ports:
+      - "9000:80"
+      logging:
+          driver: none
+
