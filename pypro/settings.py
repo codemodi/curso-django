@@ -32,7 +32,11 @@ DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
+# admin and user
 AUTH_USER_MODEL = 'base.User'
+LOGIN_REDIRECT_URL = '/modulos/'
+LOGOUT_REDIRECT_URL = '/'
+LOGIN_URL = '/contas/login/'
 
 # Application definition
 
@@ -187,3 +191,4 @@ if SENTRY_DSN:
         # django.contrib.auth) you may enable sending PII data.
         send_default_pii=True
     )
+

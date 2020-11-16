@@ -24,3 +24,4 @@ def test_home_link(resp):
 
 def test_phone_link(resp):
     assert_contains(resp, '+55 11 xxxxx-xxxx')
+
