@@ -235,11 +235,8 @@
             "version": "==0.6.0"
         },
         "pygments": {
-            "hashes": [
-                "sha256:381985fcc551eb9d37c52088a32914e00517e57f4a21609f48141ba08e193fa0",
-                "sha256:88a0bbcd659fcb9573703957c6b9cff9fab7295e6e76db54c9d00ae42df32773"
-            ],
-            "version": "==2.7.2"
+            "hashes": [],
+            "version": "==2.15.0"
         },
         "python-dateutil": {
             "hashes": [
