@@ -352,12 +352,8 @@
             "version": "==3.0.4"
         },
         "codecov": {
-            "hashes": [
-                "sha256:61bc71b5f58be8000bf9235aa9d0112f8fd3acca00aa02191bb81426d22a8584",
-                "sha256:d30ad6084501224b1ba699cbf018a340bb9553eb2701301c14133995fdd84f33"
-            ],
-            "index": "pypi",
-            "version": "==2.1.10"
+            "hashes": [],
+            "version": "==2.1.13"
         },
         "coverage": {
             "hashes": [
